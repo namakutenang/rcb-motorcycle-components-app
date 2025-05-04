@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RCB | We Build Riders' Confidence - Premium motorcycle components & accessories">
+    <title>RCB | We Build Riders' Confidence</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        rajdhani: ['Rajdhani', 'sans-serif'],
+                        ubuntu: ['Ubuntu', 'sans-serif'],
+                        heebo: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        'rcb-red': '#E31E24',
+                        'rcb-dark': '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-rajdhani bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-rcb-red">RCB</a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-rcb-dark" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex space-x-8">
+                <li><a href="#" class="text-rcb-dark hover:text-rcb-red transition-colors">Home</a></li>
+                <li><a href="#" class="text-rcb-dark hover:text-rcb-red transition-colors">Products</a></li>
+                <li><a href="#" class="text-rcb-dark hover:text-rcb-red transition-colors">About</a></li>
+                <li><a href="#" class="text-rcb-dark hover:text-rcb-red transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white" id="mobile-menu">
+            <ul class="px-4 py-2">
+                <li><a href="#" class="block py-2 text-rcb-dark hover:text-rcb-red transition-colors">Home</a></li>
+                <li><a href="#" class="block py-2 text-rcb-dark hover:text-rcb-red transition-colors">Products</a></li>
+                <li><a href="#" class="block py-2 text-rcb-dark hover:text-rcb-red transition-colors">About</a></li>
+                <li><a href="#" class="block py-2 text-rcb-dark hover:text-rcb-red transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative mt-16">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- SP500 Slide -->
+                <div class="swiper-slide relative">
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/RCB-SP500_Web-ads.jpg" alt="RCB SP500 Wheels" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h2 class="text-4xl md:text-6xl font-bold mb-4">SP500 Wheels</h2>
+                            <p class="text-xl md:text-2xl mb-8">Premium Performance for Your Ride</p>
+                            <a href="#" class="btn-primary inline-block">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nagamaki Slide -->
+                <div class="swiper-slide relative">
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <img src="https://rcb.com/wp-content/uploads/2023/11/RCB-Nagamaki_Web-ads-01-scaled.jpg" alt="RCB Nagamaki" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h2 class="text-4xl md:text-6xl font-bold mb-4">Nagamaki Series</h2>
+                            <p class="text-xl md:text-2xl mb-8">Ultimate Control & Comfort</p>
+                            <a href="#" class="btn-primary inline-block">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- S-2 Line Slide -->
+                <div class="swiper-slide relative">
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <img src="https://rcb.com/wp-content/uploads/2023/08/RCB-S-2-Line_Web-ads-01-scaled.jpg" alt="RCB S-2 Line" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h2 class="text-4xl md:text-6xl font-bold mb-4">S-2 Line</h2>
+                            <p class="text-xl md:text-2xl mb-8">Advanced Performance Parts</p>
+                            <a href="#" class="btn-primary inline-block">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Browse Products Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Browse Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Category Cards -->
+            <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                <img src="https://rcb.com/wp-content/uploads/2021/11/Artboard-2-copy-4@4x-100-scaled.jpg" alt="RIM AND ACCESSORIES" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">RIM AND ACCESSORIES</h3>
+                    <a href="/product-category/rim-and-accessories/" class="text-white hover:text-rcb-red transition-colors">View Products</a>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                <img src="https://rcb.com/wp-content/uploads/2021/11/Artboard-2-copy-2@4x-100-scaled.jpg" alt="SUSPENSIONS" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">SUSPENSIONS</h3>
+                    <a href="/product-category/suspensions/" class="text-white hover:text-rcb-red transition-colors">View Products</a>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                <img src="https://rcb.com/wp-content/uploads/2021/11/Artboard-2-copy-3@4x-100-scaled.jpg" alt="BRAKES SYSTEM" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">BRAKES SYSTEM</h3>
+                    <a href="/product-category/brakes-system/" class="text-white hover:text-rcb-red transition-colors">View Products</a>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                <img src="https://rcb.com/wp-content/uploads/2022/12/homepage-feature-product_1-jpg.webp" alt="FOOT CONTROLS" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">FOOT CONTROLS</h3>
+                    <a href="/product-category/foot-controls/" class="text-white hover:text-rcb-red transition-colors">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Bikes Section -->
+    <section class="bg-rcb-dark py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white text-center mb-12">Featured Bikes</h2>
+            <div class="swiper bikes-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <h3 class="text-white text-2xl mb-4">YAMAHA R25</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h3 class="text-white text-2xl mb-4">YAMAHA Y16ZR</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h3 class="text-white text-2xl mb-4">YAMAHA Y15ZR</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h3 class="text-white text-2xl mb-4">HONDA RS150R</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h3 class="text-white text-2xl mb-4">YAMAHA NVX</h3>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Partners Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Official Technical Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <a href="https://www.aprilia.com/en_EN/aprilia-racing/moto-gp/" class="hover:opacity-75 transition-opacity">
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/RCB-SPONSORSHIP-LOGO-2024_V1-01.png" alt="Aprilia Racing" class="w-full">
+                </a>
+                <a href="https://www.gresiniracing.com/en/team-gresini-motogp/" class="hover:opacity-75 transition-opacity">
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/RCB-SPONSORSHIP-LOGO-2024_V1-02.png" alt="Gresini Racing" class="w-full">
+                </a>
+                <a href="https://motogp.hondaracingcorporation.com/" class="hover:opacity-75 transition-opacity">
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/RCB-SPONSORSHIP-LOGO-2024_V1-03.png" alt="Honda Racing" class="w-full">
+                </a>
+                <a href="https://www.yamahamotogp.com/" class="hover:opacity-75 transition-opacity">
+                    <img src="https://rcb.com/wp-content/uploads/2021/12/RCB-SPONSORSHIP-LOGO-2024_V1_4.png" alt="Yamaha MotoGP" class="w-full">
+                </a>
+                <a href="https://www.ktm.com/en-pt/racing/road-racing.html" class="hover:opacity-75 transition-opacity">
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/RCB-SPONSORSHIP-LOGO-2024_V1-05.png" alt="KTM Racing" class="w-full">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Highlights Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Latest Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Highlight Card 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://rcb.com/wp-content/uploads/2024/06/rcb-athlete-650x650.jpg" alt="RCB Athlete Programme" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <time class="text-gray-500 text-sm">June 6, 2024</time>
+                        <h3 class="text-xl font-bold mt-2 mb-4">Launch of RCB Athlete Programme</h3>
+                        <a href="#" class="text-rcb-red hover:text-rcb-dark transition-colors">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Highlight Card 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://rcb.com/wp-content/uploads/2024/04/Innovation-Centre-3-650x650.jpeg" alt="Innovation Center" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <time class="text-gray-500 text-sm">April 1, 2024</time>
+                        <h3 class="text-xl font-bold mt-2 mb-4">MKA Group Announces Groundbreaking Ceremony for Innovation Center</h3>
+                        <a href="#" class="text-rcb-red hover:text-rcb-dark transition-colors">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Highlight Card 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://rcb.com/wp-content/uploads/2023/01/SP522-Gloss-Black_1-min-650x650.webp" alt="RCB SP522 Sport Rim" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <time class="text-gray-500 text-sm">January 19, 2023</time>
+                        <h3 class="text-xl font-bold mt-2 mb-4">Rev Up Your LC135 and SRL with the RCB SP522 Sport Rim</h3>
+                        <a href="#" class="text-rcb-red hover:text-rcb-dark transition-colors">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rcb-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">RCB</h3>
+                    <p class="mb-4">We Build Riders' Confidence</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-rcb-red transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-rcb-red transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-rcb-red transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">Products</a></li>
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">Rim and Accessories</a></li>
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">Suspensions</a></li>
+                        <li><a href="#" class="hover:text-rcb-red transition-colors">Brakes System</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-envelope mr-2"></i> info@rcb.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2024 RCB. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
